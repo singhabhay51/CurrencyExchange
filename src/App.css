@@ -1,33 +1,67 @@
 .App {
-  text-align: center;
+  width:30%;
+  margin: auto;
+  border: 1px solid black;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.currency{
+  width:85%;
+  padding: .5em;
+  border-right: 1px solid black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.currency-main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 5%;
+  border: 1px solid black;
+}
+.currency-head{
+  border-bottom: 1px solid black;
+  padding: 6%;
 }
 
-.App-link {
-  color: #61dafb;
+.add-currency{
+  margin: 5%;
+  border: 1px solid black;
+  padding: 2%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.labelBtn{
+  cursor: pointer;
+}
+
+.addBtn{
+  color:green;
+}
+
+.delBtn{
+  margin: auto;
+  color: orange;
+}
+
+.floatRight{
+  float: right;
+}
+
+.currencylist{
+  max-height: 99vh;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.currencylist::-webkit-scrollbar { width: 0 !important }
+
+@media screen and (max-width: 480px) {
+  .App{
+    width: 90%;
   }
 }
+
+@media screen and (min-width:480px) and (max-width: 800px) {
+  .App{
+    width: 60%;
+  }
+}
+
+
